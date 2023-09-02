@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+
+body {
+    display:flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    font-family: 'DotGothic16', sans-serif;
+
+    background-color: #ffa300CC;
+    /*opacity: 0.8;*/
+    background-size: 40px 40px;
+    background-image:  repeating-linear-gradient(0deg, #f8f3d4, #f8f3d4 2px, #ffa300 2px, #ffa300);
+    color:#f8f3d4;
+}
+
+.cajero {
+    /*background-color: seagreen;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+    
+    object-fit: cover;
+    border-radius: 1rem;
+    border: 0.6rem solid #f8f3d4;
+    width: 70vw;
+    height: 90vh;
+
+    font-size: 3rem;
+    
+    background-color: #ffa300;
+    
+}
+.imagen{
+    grid-column: 1;
+    grid-row: 1;
+    border-radius: 1rem;
+    width: auto;
+    height: 50%;
+    filter: opacity(0.5);
+}
+
+.letra1{
+    grid-column: 1;
+    grid-row: 1;
+    width: auto;
+    font-size: 3rem;
+    color: #f8f3d4;
+    justify-self: center;
+    margin-left: 1rem;
+}
+
+button{
+    font-size: 2rem;
+    width: 40%;
+    height: 80%;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+    padding: -1rem;
+
+    border: 0.3rem solid #f8f3d4;
+    border-radius: 0.3rem;
+    background-color: transparent;
+    color: #f8f3d4;
+
+    
+}
+#bt1{
+    grid-column: 1;
+    grid-row: 2;
+}
+#bt2{
+    grid-column: 1;
+    grid-row: 3;
+}
+#bt3{
+    grid-column: 1;
+    grid-row: 4;
+}
+#bt4{
+    grid-column: 4;
+    grid-row: 2;
+}
+#bt5{
+    grid-column: 4;
+    grid-row: 3;
+}
+#bt6{
+    grid-column: 4;
+    grid-row: 4;
+}
+
+
+#op1{
+    font-size: 1.2rem;
+    grid-column: 2;
+    grid-row: 1;
+    margin-right: 1rem;
+    align-self: center;
+    justify-self: end;
+    visibility: collapse;
+}
+#op2{
+    font-size: 1.2rem;
+    grid-column: 2;
+    grid-row: 2;
+    margin-right: 1rem;
+    align-self: center;
+    justify-self: end;
+    visibility: collapse;
+}
+#op3{
+    font-size: 1.2rem;
+    grid-column: 2;
+    grid-row: 3;
+    margin-right: 1rem;
+    align-self: center;
+    justify-self: end;
+    
+    visibility: collapse;
+}
+
+.cont{
+    border: 0.3rem solid #f8f3d4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 5;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    border-radius: 0.4rem;
+    
+}
+
+#message{
+    font-size: 1.5rem;
+    grid-row: 1;
+    grid-column-start: 2;
+    grid-column-end:4;
+
+    align-self: end;
+    justify-self: center;
+}
+
+button:active{
+    transform: scale(0.9);
+}
+
+
+
+#firma{
+    grid-row: 5;
+    grid-column: 4;
+    font-size: 0.8rem;
+    justify-self: end;
+    align-self: end;
+}
+
+#usua{
+    grid-row: 1;
+    grid-column: 1;
+
+    font-size: 1rem;
+    
+    align-self: center;
+    padding: 0.2rem;
+    padding-bottom: 0.4rem;
+    
+}
+#passa{
+    grid-row: 2;
+    grid-column: 1;
+
+    font-size: 1rem;
+    
+    align-self: center;
+    padding: 0.2rem;
+    padding-bottom: 0.4rem;
+
+}
+
+#ingr{
+    grid-row: 1;
+    grid-column: 1;
+
+    font-size: 1rem;
+    
+    align-self: center;
+    padding: 0.2rem;
+    padding-bottom: 0.4rem;
+    visibility: collapse;
+}
+#retr{
+    grid-row: 1;
+    grid-column: 1;
+
+    font-size: 1rem;
+    
+    align-self: center;
+    padding: 0.2rem;
+    padding-bottom: 0.4rem;
+    visibility: collapse;
+}
+
+#subLogin{
+    grid-row: 3;
+    grid-column: 2;
+    justify-self: end;
+    align-self: center;
+    width: 60%;
+    height: 3rem;
+    margin-right: 1rem;
+
+    font-size: 1rem;
+    border: 0.3rem solid #f8f3d4;
+}
+input[type*="text"]{
+    background-color: transparent;
+    border: 0.2rem solid #f8f3d4;
+    border-radius: 0.3rem;
+    color: #f8f3d4;
+}
+input[type*="number"]{
+    background-color: transparent;
+    border: 0.2rem solid #f8f3d4;
+    border-radius: 0.3rem;
+    color: #f8f3d4;
+}
+input[type*="password"]{
+    background-color: transparent;
+    border: 0.2rem solid #f8f3d4;
+    border-radius: 0.3rem;
+    color: #f8f3d4;
+}
+
+
+#sald{
+    font-size: 1.2rem;
+    margin-left: 0.7rem;
+    grid-row: 1;
+    grid-column: 1;
+    visibility: collapse;
+    align-self: center;
+}
+#volv1{
+    font-size: 1.5rem;
+    align-self: center;
+    justify-self: end;
+    margin-right: 0.5rem;
+
+    grid-row: 3;
+    grid-column: 2;
+    visibility: collapse;
+}
+#ingress{
+    font-size: 1.5rem;
+    align-self: center;
+    justify-self: end;
+    margin-right: 0.5rem;
+
+    grid-row: 2;
+    grid-column: 2;
+    visibility: collapse;
+}
+#retss{
+    font-size: 1.5rem;
+    align-self: center;
+    justify-self: end;
+    margin-right: 0.5rem;
+
+    grid-row: 2;
+    grid-column: 2;
+    visibility: collapse;
+}
+
+@media screen and (max-width: 1000px) {
+    #bt1{
+        visibility: collapse;
+    }
+    #bt2{
+        visibility: collapse;
+    }
+    #bt3{
+        visibility: collapse;
+    }
+    .cajero{
+        grid-template-columns: 0px 1fr 1fr;
+    }
+    .letra1{
+        grid-column: 2;
+    }
+    .cont{
+        margin-left: 1rem;
+    }
+    #message{
+        margin-left: 1rem;
+    }
+}
