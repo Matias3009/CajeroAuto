@@ -49,7 +49,9 @@ function if1(){
         if(usu.value == nomCliente ){
         
             if(pas.value == password ){
+                err.innerHTML = "";
                 return true;
+
             }
             else{
                 intentos --;
@@ -59,7 +61,7 @@ function if1(){
             }
         }
         else{
-            err.innerHTML = "*Error: Usuario Invalido "
+            err.innerHTML = "*Error: Usuario Invalido ";
             usu.focus();
             pas.value = "";
         }
